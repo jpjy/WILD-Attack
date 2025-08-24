@@ -20,19 +20,11 @@ They form the basis for validating the persistence, update latency, and conflict
 ---
 
 ### 📂 `BSSID-Discovery`
-This folder contains scripts for demonstrating how an attacker can remotely obtain **target BSSIDs** surrounding a victim’s actual location.  
+This folder contains scripts for demonstrating how an attacker can remotely obtain **target BSSIDs** surrounding the victim’s actual location.  
 It includes two techniques:
 - **Hop-by-Hop Expansion** – gradually expanding outward from a known BSSID.  
-- **Last-Hex Enumeration** – brute-force style enumeration of nearby BSSIDs by varying MAC address suffixes.
+- **Last-Hex Enumeration** – enumeration of nearby BSSIDs by varying MAC address last Hex digit.
 
-These tools illustrate the feasibility of discovering nearby access points (APs) without physical presence at the target site.
 
 ---
 
-## Usage Notes
-
-- Each subfolder contains scripts and helper files (`.py`) used in the experiments.  
-- Please see the comments inside each script for detailed usage.  
-- For reproducibility, ensure Python ≥3.8 and install required dependencies:
-  ```bash
-  pip install -r requirements.txt
