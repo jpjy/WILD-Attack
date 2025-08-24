@@ -1,4 +1,4 @@
-# WiLD Attack — Open Science Artifacts
+# WILD Attack — Open Science Artifacts
 
 
 This repository contains the artifacts, providing code and scripts for **Location Lookup Table (LLT) probing** and **Target BSSID Discovery** methods.
