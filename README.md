@@ -1,7 +1,7 @@
 # WiFi-Localization — Open Science Artifacts
 
-This repository contains the artifacts supporting our USENIX paper.  
-It provides code and scripts to **reproduce key components of our experiments** on Wi-Fi Positioning Systems (WPS), specifically targeting the **Location Lookup Table (LLT)** update process and methods for **BSSID discovery**.
+
+This repository contains the artifacts, providing code and scripts for **Location Lookup Table (LLT) probing** and **Target BSSID Discovery** methods.
 
 ---
 
