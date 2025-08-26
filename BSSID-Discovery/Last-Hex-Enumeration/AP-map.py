@@ -2,8 +2,8 @@ import folium
 import pandas as pd
 
 # === Configuration ===
-input_file = 'Tampa-1km/Obtain-Tampa-AP-1km-July-28.txt'  # change this to your actual filename
-output_map = 'Tampa-1km/July-28-map.html'
+input_file = ''  # change this to your actual filename
+output_map = ''
 
 # === Load and parse the file ===
 # Assuming format: BSSID, latitude, longitude (comma-separated, with optional spaces)

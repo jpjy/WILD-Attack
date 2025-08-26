@@ -4,8 +4,8 @@ import time
 # Tencent Map API Config
 #API_URL = "https://apilocate.amap.com/position"
 API_URL = "http://8.138.206.8:5050/gd_position"
-#API_KEY = "23ff36b2fe109a9162e7e34f88341aeb"  # Replace with your A-Map API Key
-API_KEY = "8a3ddd69a104ae67a34b"
+#API_KEY = ""  # Replace with your A-Map API Key
+API_KEY = ""
 IMEI = "15030518977"
 
 # Function to read MAC addresses from file and test
