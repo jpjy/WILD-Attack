@@ -1,27 +1,76 @@
-This repository contains the artifacts, providing code and scripts for **Location Lookup Table (LLT) probing** and **Target BSSID Discovery** methods.
+# Repository Overview
+
+This artifact contains the code, scripts, and datasets used to reproduce the experimental results in our paper, including **Location Lookup Table (LLT) probing**, **BSSID discovery**, and **BSSID–coordinate data** used in Sections 4, 5, and 6.
 
 ---
 
-## Repository Structure
+## LLT Probe
 
-### 📂 `LLT Probe`
-This folder contains scripts for probing the **LLT behavior** of the investigated WPS providers:
-- **Google WPS**
-- **Apple WPS**
-- **A-Map**
+This directory contains scripts for probing and characterizing the **Location Lookup Table (LLT) behavior** across four major Wi-Fi Positioning System (WPS) providers:
+
+- **Google WPS**  
+- **Apple WPS**  
+- **A-Map**  
 - **WiGLE**
 
-These scripts allow researchers to confirm whether and how LLT entries are updated during experiments.  
-They form the basis for validating the persistence, update latency, and conflict resolution policies of different WPS providers.
+Each subfolder includes executable scripts that interact directly with the corresponding WPS provider’s API.
+
+### Executable LLT Probe Scripts
+
+| Provider | Script | Description |
+|----------|--------|-------------|
+| **Apple WPS** | `test_wloc.py` | Sends BSSID queries to Apple’s binary geolocation API and inspects LLT responses. |
+| **A-Map WPS** | `test-api.py` | Queries A-Map’s official Wi-Fi geolocation API (HTTP JSON). |
+| **Google WPS** | `test-all-pairs.py` | Probes Google’s WPS API with BSSIDs and optional signal strengths. |
+| **WiGLE** | `test-all-pairs.py` | Queries WiGLE’s API for BSSID → coordinate mapping. |
 
 ---
 
-### 📂 `BSSID-Discovery`
-This folder contains scripts for demonstrating how an attacker can remotely obtain **target BSSIDs** surrounding the victim’s actual location.  
-It includes two techniques:
-- **Hop-by-Hop Expansion** – gradually expanding outward from a known BSSID.  
-- **Last-Hex Enumeration** – enumeration of nearby BSSIDs by varying MAC address last Hex digit.
+## BSSID-Discovery
 
+This directory contains the attack-side scripts demonstrating how an adversary can remotely discover **target BSSIDs** near the victim's real location.
+
+It includes implementations of:
+
+- **Hop-by-Hop Expansion** – progressively exploring BSSIDs returned by WPS providers.  
+- **Last-Hex Enumeration** – enumerating BSSIDs by varying the last MAC address hex byte.
+
+These scripts support the evaluation in **Section 5**, including the nine-location study presented in Figure 9.
 
 ---
+
+## Data-BSSID-Coordinates
+
+This directory contains the data used in the paper:
+
+
+### Section-4  
+Contains the experiment locations and counts of nearby BSSIDs categorized into:
+
+- low-traffic density zones  
+- medium-traffic density zones  
+- high-traffic density zones  
+
+(Used in Section 4.)
+
+---
+
+### Section-5  
+Contains BSSID sets obtained through:
+
+- Hop-by-Hop Expansion  
+- Last-Hex Enumeration  
+
+for all nine evaluation locations shown in Figure 9.
+
+---
+
+### Section-6  
+Contains the full dataset of:
+
+- **262,073 BSSIDs within a 10 km radius centered at Tallinn (59.437°N, 24.738°E)**
+
+used in the city-scale evaluation in Section 6.
+
+
 
