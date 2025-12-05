@@ -1,4 +1,4 @@
-# Repository Overview
+# Overview
 
 This artifact contains the code, scripts, and datasets used to reproduce the experimental results in our paper, including **Location Lookup Table (LLT) probing**, **BSSID discovery**, and **BSSID–coordinate data** used in Sections 4, 5, and 6.
 
