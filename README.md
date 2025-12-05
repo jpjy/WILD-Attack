@@ -6,7 +6,7 @@ This artifact contains the code, scripts, and datasets used to reproduce the exp
 
 ## LLT Probe
 
-This directory contains scripts for probing and characterizing the **Location Lookup Table (LLT) behavior** across four major Wi-Fi Positioning System (WPS) providers:
+This directory contains scripts for probing and characterizing the Location Lookup Table (LLT) behavior across four major Wi-Fi Positioning System (WPS) providers:
 
 - **Google WPS**  
 - **Apple WPS**  
@@ -28,14 +28,12 @@ Each subfolder includes executable scripts that interact directly with the corre
 
 ## BSSID-Discovery
 
-This directory contains the attack-side scripts demonstrating how an adversary can remotely discover **target BSSIDs** near the victim's real location.
+This directory contains the attack-side scripts demonstrating how an adversary can remotely discover target BSSIDs near the victim's real location.
 
 It includes implementations of:
 
 - **Hop-by-Hop Expansion** – progressively exploring BSSIDs returned by WPS providers.  
 - **Last-Hex Enumeration** – enumerating BSSIDs by varying the last MAC address hex byte.
-
-These scripts support the evaluation in **Section 5**, including the nine-location study presented in Figure 9.
 
 ---
 
