@@ -1,6 +1,6 @@
 # Overview
 
-This artifact contains the code, scripts, and datasets used to reproduce the experimental results in our paper, including **Location Lookup Table (LLT) probing**, **BSSID discovery**, and **BSSID–coordinate data** used in Sections 4, 5, and 6.
+This artifact contains the code, scripts, and datasets used to reproduce the experimental results in our paper, including **Location Lookup Table (LLT) probing**, **BSSID discovery**, and **BSSID–coordinate data** used in WILD Attack.
 
 ---
 
@@ -39,36 +39,14 @@ It includes implementations of:
 
 ## Data-BSSID-Coordinates
 
-This directory contains the data used in the paper:
-
-
-### Section-4  
-Contains the experiment locations and counts of nearby BSSIDs categorized into:
+This directory contains the experiment locations and counts of nearby BSSIDs categorized into:
 
 - low-traffic density zones  
 - medium-traffic density zones  
 - high-traffic density zones  
 
-(Used in Section 4.)
+(Used in Section 4 WILD Attack.)
 
----
-
-### Section-5  
-Contains BSSID sets obtained through:
-
-- Hop-by-Hop Expansion  
-- Last-Hex Enumeration  
-
-for all nine evaluation locations shown in Figure 9.
-
----
-
-### Section-6  
-Contains the full dataset of:
-
-- 262,073 BSSIDs within a 10 km radius centered at Tallinn (59.437°N, 24.738°E)
-
-used in the city-scale evaluation in Section 6.
 
 
 
