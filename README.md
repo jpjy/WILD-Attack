@@ -68,7 +68,7 @@ for all nine evaluation locations shown in Figure 9.
 ### Section-6  
 Contains the full dataset of:
 
-- **262,073 BSSIDs within a 10 km radius centered at Tallinn (59.437°N, 24.738°E)**
+- 262,073 BSSIDs within a 10 km radius centered at Tallinn (59.437°N, 24.738°E)
 
 used in the city-scale evaluation in Section 6.
 
