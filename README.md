@@ -4,7 +4,9 @@ This artifact contains the code, scripts, and datasets used to reproduce the exp
 
 ---
 
-## LLT Probe
+## LLT Probe 
+
+Used through the paper
 
 This directory contains scripts for probing and characterizing the Location Lookup Table (LLT) behavior across four major Wi-Fi Positioning System (WPS) providers:
 
@@ -14,6 +16,7 @@ This directory contains scripts for probing and characterizing the Location Look
 - **WiGLE**
 
 Each subfolder includes executable scripts that interact directly with the corresponding WPS provider’s API.
+During our experiments, we did not encounter explicit rate limiting on the LLT probing interactions used with these providers.
 
 ### Executable LLT Probe Scripts
 
@@ -28,6 +31,8 @@ Each subfolder includes executable scripts that interact directly with the corre
 
 ## BSSID-Discovery
 
+Used in Section 5
+
 This directory contains the attack-side scripts demonstrating how an adversary can remotely discover target BSSIDs near the victim's real location.
 
 It includes implementations of:
@@ -39,13 +44,14 @@ It includes implementations of:
 
 ## Data-BSSID-Coordinates
 
+Used in Section 4
+
 This directory contains the experiment locations and counts of nearby BSSIDs categorized into:
 
 - low-traffic density zones  
 - medium-traffic density zones  
 - high-traffic density zones  
 
-(Used in Section 4 WILD Attack.)
 
 
 
